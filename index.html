@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,12 +8,14 @@
   <title>Gllacy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
   <header class="header">
     <nav class="navigation">
       <a class="navigation__logo">
-        <img src="#" alt="Gllacy Logo">
+        <picture>
+          <img src="#" alt="Gllacy Logo" title="Gllacy Logo">
+        </picture>
       </a>
       <ul class="navigation__main">
         <li class="navigation__main-item">
@@ -31,13 +34,13 @@
       <ul class="navigation__add">
         <li class="navigation__add-item">
           <a href="#">Поиск по сайту</a>
-          <div class="navigation__search">
+          <form action="https://htmlacademy.ru" method="get" class="navigation__search">
             <input type="search" placeholder="Что ищем?" class="navigation__search-item">
-          </div>
+          </form>
         </li>
         <li class="navigation__add-item">
           <a href="#">Вход</a>
-          <div class="navigation__join">
+          <form action="https://htmlacademy.ru" method="get" class="navigation__join">
             <label class="navigation__join-mail">
               <input type="email" placeholder="Электронная почта">
             </label>
@@ -49,34 +52,14 @@
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
-          </div>
+          </form>
         </li>
         <li class="navigation__add-item">
-          <a href="#" class="navigation__cart-link">
-            <span>Пусто</span>
-            <span>2 товара</span>
-          </a>
-          <div class="navigation__cart-prev">
-            <table class="navigation__cart-table">
-              <tr>
-                <td></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-            </table>
-          </div>
+          <a href="#" class="navigation__cart-link">Пусто</a>
         </li>
       </ul>
     </nav>
   </header>
-
   <main class="main">
     <section class="index-head">
       <div class="index-head__item index-head__item--1">
@@ -110,40 +93,56 @@
     </div>
     <section class="hits">
       <article class="product">
-        <div class="product__view-block">
-          <img src="#" alt="">
-          <span>310Р/кг</span>
+        <h1>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </h1>
+        <div class="product__view-block">
+          <picture>
+            <img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </picture>
+          <span>310Р/кг</span>
         </div>
         <div class="product__hidden-block">
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
       </article>
       <article class="product">
-        <div class="product__view-block">
-          <img src="#" alt="">
-          <span>380Р/кг</span>
+        <h1>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        </h1>
+        <div class="product__view-block">
+          <picture>
+            <img src="#" alt="Сливочно-кофейное с кусочками шоколада" title="Сливочно-кофейное с кусочками шоколада">
+          </picture>
+          <span>380Р/кг</span>
         </div>
         <div class="product__hidden-block">
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
       </article>
       <article class="product">
-        <div class="product__view-block">
-          <img src="#" alt="">
-          <span>355Р/кг</span>
+        <h1>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </h1>
+        <div class="product__view-block">
+          <picture>
+            <img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада" title="Сливочно-клубничное с присыпкой из белого шоколада">
+          </picture>
+          <span>355Р/кг</span>
         </div>
         <div class="product__hidden-block">
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
       </article>
       <article class="product">
-        <div class="product__view-block">
-          <img src="#" alt="">
-          <span>415Р/кг</span>
+        <h1>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        </h1>
+        <div class="product__view-block">
+          <picture>
+            <img src="#" alt="Сливочное крем-брюле с карамельной подливкой" title="Сливочное крем-брюле с карамельной подливкой">
+          </picture>
+          <span>415Р/кг</span>
         </div>
         <div class="product__hidden-block">
           <a href="#" class="button">Быстрый просмотр</a>
@@ -152,10 +151,12 @@
     </section>
     <article class="seo">
       <h1 class="seo__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-      <p class="seo__ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-      <p class="seo__farm">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-      <p class="seo__eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      <p class="seo__temp">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      <ul class="seo__list">
+        <li class="seo__item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+        <li class="seo__item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+        <li class="seo__item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+        <li class="seo__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+      </ul>
     </article>
     <section class="news">
       <h2 class="news__title">10 способов сервировки фруктовых щербетов к столу</h2>
@@ -180,13 +181,12 @@
       </address>
     </section>
   </main>
-
   <footer class="footer">
     <ul class="social">
-      <li class="social__item"><a href="#" class="social__">Twitter</a></li>
-      <li class="social__item"><a href="#" class="social__">Instagram</a></li>
-      <li class="social__item"><a href="#" class="social__">Facebook</a></li>
-      <li class="social__item"><a href="#" class="social__">VK</a></li>
+      <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+      <li class="social__item social__item--inst"><a href="#">Instagram</a></li>
+      <li class="social__item social__item--fc"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--vk"><a href="#">VK</a></li>
     </ul>
     <div class="footer__about">
       <ul class="footer__about-list">
@@ -198,15 +198,16 @@
     </div>
     <div class="footer__dev">
       <a href="#" class="footer__dev-logo">
-        <img src="#" alt="">
+        <picture>
+          <img src="#" alt="HTML Academy" title="HTML Academy">
+        </picture>
       </a>
-      <span class="footer__made-in">Сделано в <a href="htmlacademy.ru">HTML Academy</a> © 2017</span>
+      <span class="footer__made-in">Сделано в <a href="htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
     </div>
   </footer>
-
   <div class="modal">
-    <p class="modal__title">Мы обязательно вам ответим!</p>
-    <form action="#" class="modal__form">
+    <h2 class="modal__title">Мы обязательно вам ответим!</h2>
+    <form action="https://htmlacademy.ru" method="get" class="modal__form">
       <label class="modal__form-name">
         <input type="text" placeholder="Как вас зовут?">
       </label>
@@ -217,6 +218,6 @@
       <button type="submit" class="button"></button>
     </form>
   </div>
-
 </body>
+
 </html>
