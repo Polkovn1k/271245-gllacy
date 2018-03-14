@@ -37,17 +37,22 @@
       <ul class="navigation__add">
         <li class="navigation__add-item">
           <a href="#">Поиск по сайту</a>
-          <form action="https://htmlacademy.ru" method="get" class="navigation__search">
-            <input type="search" placeholder="Что ищем?" class="navigation__search-item">
+          <form action="https://htmlacademy.ru" method="get" name="search" class="navigation__search">
+            <label class="navigation__search-item">
+              <span>Поиск по сайту</span>
+              <input type="search" placeholder="Что ищем?">
+            </label>
           </form>
         </li>
         <li class="navigation__add-item">
           <a href="#">Вход</a>
-          <form action="https://htmlacademy.ru" method="get" class="navigation__join">
+          <form action="https://htmlacademy.ru" method="get" name="join" class="navigation__join">
             <label class="navigation__join-mail">
+              <span>Введите email</span>
               <input type="email" placeholder="Электронная почта">
             </label>
             <label class="navigation__join-pass">
+              <span>Введите пароль</span>
               <input type="password" placeholder="Пароль">
             </label>
             <div class="navigation__join-links">
@@ -91,7 +96,7 @@
     </ul>
     <section class="form-wrap">
       <h1 class="form-wrap__title">Сливочное мороженое</h1>
-      <form action="https://htmlacademy.ru" method="get" class="form">
+      <form action="https://htmlacademy.ru" method="get" name="filter" class="form">
         <fieldset class="form__sort">
           <legend class="form__title">Сортировка:</legend>
           <select name="sort-select" id="select" class="form__sort-select">
