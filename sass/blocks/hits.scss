@@ -1,0 +1,9 @@
+.hits {
+
+}
+
+.hits__container {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}

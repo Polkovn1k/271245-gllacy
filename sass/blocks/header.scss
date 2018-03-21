@@ -1,0 +1,9 @@
+.header {
+  padding-top: 10px;
+}
+
+.header__container {
+  display: flex;
+  @include container();
+  align-items: flex-start;
+}

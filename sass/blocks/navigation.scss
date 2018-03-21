@@ -1,0 +1,150 @@
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.navigation__logo {
+
+}
+
+.navigation__logo img {
+  width: 154px;
+  height: 64px;
+}
+
+.navigation__main {
+  @include order-reset();
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+
+.navigation__main-item {
+
+}
+
+.navigation__main-item:last-child {
+  margin-right: 0;
+}
+
+.navigation__main-item a {
+  display: block;
+  padding: 7px 14px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.13;
+}
+
+.navigation__hover-nav {
+  @include order-reset();
+  display: none;
+}
+
+.navigation__hover-item {
+
+}
+
+.navigation__hover-item a {
+
+}
+
+.navigation__add {
+  @include order-reset();
+  display: flex;
+  margin-left: auto;
+  padding-top: 13px;
+}
+
+.navigation__add-item {
+  display: flex;
+  margin-right: 10px;
+}
+
+.navigation__add-item:last-child {
+  margin-right: 0;
+}
+
+.navigation__add-item a {
+  display: block;
+  padding: 8px 0;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.14;
+}
+
+.navigation__add-item--search a {
+  display: block;
+  width: 33px;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.navigation__add-item--join a {
+  display: block;
+  padding-left: 44px;
+  padding-right: 16px;
+}
+
+.navigation__add-item--cart a {
+  display: block;
+  padding-left: 45px;
+  padding-right: 34px;
+}
+
+.navigation__search {
+  display: none;
+}
+
+.navigation__search-item {
+
+}
+
+.navigation__search-item span {
+  font-size: 0;
+}
+
+.navigation__search-item input {
+
+}
+
+.navigation__join {
+  display: none;
+}
+
+.navigation__join-mail {
+
+}
+
+.navigation__join-mail span {
+  font-size: 0;
+}
+
+.navigation__join-mail input {
+
+}
+
+.navigation__join-pass {
+
+}
+
+.navigation__join-pass span {
+  font-size: 0;
+}
+
+.navigation__join-pass input {
+
+}
+
+.navigation__cart-link {
+
+}

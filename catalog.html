@@ -14,81 +14,85 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
-    <nav class="navigation">
-      <a href="index.html" class="navigation__logo">
-        <picture>
-          <img src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Logo" title="Gllacy Logo">
-        </picture>
-      </a>
-      <ul class="navigation__main">
-        <li class="navigation__main-item">
-          <a href="#">Каталог</a>
-          <ul class="navigation__hover-nav">
-            <li class="navigation__hover-item"><a href="#">Новинки</a></li>
-            <li class="navigation__hover-item"><a>Сливочное</a></li>
-            <li class="navigation__hover-item"><a href="#">Щербеты</a></li>
-            <li class="navigation__hover-item"><a href="#">Фруктовый лед</a></li>
-            <li class="navigation__hover-item"><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li class="navigation__main-item"><a href="#">Доставка и оплата</a></li>
-        <li class="navigation__main-item"><a href="#">О компании</a></li>
-      </ul>
-      <ul class="navigation__add">
-        <li class="navigation__add-item">
-          <a href="#">Поиск по сайту</a>
-          <form action="https://htmlacademy.ru" method="get" name="search" class="navigation__search">
-            <label class="navigation__search-item">
-              <span>Поиск по сайту</span>
-              <input type="search" placeholder="Что ищем?">
-            </label>
-          </form>
-        </li>
-        <li class="navigation__add-item">
-          <a href="#">Вход</a>
-          <form action="https://htmlacademy.ru" method="get" name="join" class="navigation__join">
-            <label class="navigation__join-mail">
-              <span>Введите email</span>
-              <input type="email" placeholder="Электронная почта">
-            </label>
-            <label class="navigation__join-pass">
-              <span>Введите пароль</span>
-              <input type="password" placeholder="Пароль">
-            </label>
-            <div class="navigation__join-links">
-              <button type="submit" class="button">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+    <div class="container">
+      <nav class="navigation">
+        <a href="index.html" class="navigation__logo">
+          <picture>
+            <img src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Logo" title="Gllacy Logo">
+          </picture>
+        </a>
+        <ul class="navigation__main">
+          <li class="navigation__main-item">
+            <a href="#">Каталог</a>
+            <ul class="navigation__hover-nav">
+              <li class="navigation__hover-item"><a href="#">Новинки</a></li>
+              <li class="navigation__hover-item"><a>Сливочное</a></li>
+              <li class="navigation__hover-item"><a href="#">Щербеты</a></li>
+              <li class="navigation__hover-item"><a href="#">Фруктовый лед</a></li>
+              <li class="navigation__hover-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item"><a href="#">Доставка и оплата</a></li>
+          <li class="navigation__main-item"><a href="#">О Компании</a></li>
+        </ul>
+        <ul class="navigation__add">
+          <li class="navigation__add-item navigation__add-item--search">
+            <a href="#">Поиск по сайту</a>
+            <form action="https://htmlacademy.ru" method="get" name="search" class="navigation__search">
+              <label class="navigation__search-item">
+                <span>Поиск по сайту</span>
+                <input type="search" placeholder="Что ищем?">
+              </label>
+            </form>
+          </li>
+          <li class="navigation__add-item navigation__add-item--join">
+            <a href="#">Вход</a>
+            <form action="https://htmlacademy.ru" method="get" name="join" class="navigation__join">
+              <label class="navigation__join-mail">
+                <span>Введите email</span>
+                <input type="email" placeholder="Электронная почта">
+              </label>
+              <label class="navigation__join-pass">
+                <span>Введите пароль</span>
+                <input type="password" placeholder="Пароль">
+              </label>
+              <div class="navigation__join-links">
+                <button type="submit" class="button">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </li>
+          <li class="navigation__add-item navigation__add-item--cart">
+            <a href="#" class="navigation__cart-link">2 товара</a>
+            <div class="navigation__cart-prev">
+              <table class="navigation__cart-table">
+                <tr>
+                  <td></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
             </div>
-          </form>
-        </li>
-        <li class="navigation__add-item">
-          <a href="#" class="navigation__cart-link">2 товара</a>
-          <div class="navigation__cart-prev">
-            <table class="navigation__cart-table">
-              <tr>
-                <td></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-            </table>
-          </div>
-        </li>
-      </ul>
-    </nav>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
-    <div class="main__work-mode">
-      <span>С 10 до 20, ежедневно</span>
-      <a href="tel:88124502525">8 812 450-25-25</a>
-    </div>
+    <section class="work-mode">
+      <div class="work-mode__container">
+        <span>С 10 до 20, ежедневно</span>
+        <a href="tel:88124502525">8 812 450-25-25</a>
+      </div>
+    </section>
     <ul class="crumbs">
       <li class="crumbs__item"><a href="index.html">Главная</a></li>
       <li class="crumbs__item"><a href="#">Каталог</a></li>
@@ -297,7 +301,7 @@
         </h1>
         <div class="product__view-block">
           <picture>
-           <img src="img/content/ice-creams--x1/ice-cream-12--x1.png" srcset="img/content/ice-creams--x1/ice-cream-12--x1.png 1x, img/content/ice-creams--x2/ice-cream-12--x2.png 2x" alt="Сливочное с мятным сиропом" title="Сливочное с мятным сиропом">
+            <img src="img/content/ice-creams--x1/ice-cream-12--x1.png" srcset="img/content/ice-creams--x1/ice-cream-12--x1.png 1x, img/content/ice-creams--x2/ice-cream-12--x2.png 2x" alt="Сливочное с мятным сиропом" title="Сливочное с мятным сиропом">
           </picture>
           <span>420Р/кг</span>
         </div>
