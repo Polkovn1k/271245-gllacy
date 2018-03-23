@@ -3,7 +3,7 @@ padding-bottom: 40px;
 }
 
 .seo__container {
-  @include container();
+  @include container-margin();
   padding-bottom: 15px;
 }
 

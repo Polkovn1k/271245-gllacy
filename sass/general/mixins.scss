@@ -4,6 +4,11 @@
   padding: 0 27px;
 }
 
+@mixin container-margin() {
+  width: 1146px;
+  margin: 0 auto;
+}
+
 @mixin order-reset() {
   margin: 0;
   padding: 0;

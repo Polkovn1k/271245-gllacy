@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  @include order-reset();
+  flex-basis: 33.333%;
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-left: 2px;
+}
+
+.social__item {
+  margin-right: 11px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item a {
+  display: block;
+  padding-right: 38px;
+  padding-top: 38px;
+  font-size: 0;
+}
+
+.social__item--tw a {
+
+}
+
+.social__item--inst a {
+
+}
+
+.social__item--fc a {
+
+}
+
+.social__item--vk a {
+
+}

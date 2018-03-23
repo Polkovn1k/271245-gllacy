@@ -38,7 +38,7 @@
         <ul class="navigation__add">
           <li class="navigation__add-item navigation__add-item--search">
             <a href="#">Поиск по сайту</a>
-            <form action="https://htmlacademy.ru" method="get" name="search" class="navigation__search">
+            <form action="https://echo.htmlacademy.ru/" method="get" name="search" class="navigation__search">
               <label class="navigation__search-item">
                 <span>Поиск по сайту</span>
                 <input type="search" placeholder="Что ищем?">
@@ -47,7 +47,7 @@
           </li>
           <li class="navigation__add-item navigation__add-item--join">
             <a href="#">Вход</a>
-            <form action="https://htmlacademy.ru" method="get" name="join" class="navigation__join">
+            <form action="https://echo.htmlacademy.ru/" method="get" name="join" class="navigation__join">
               <label class="navigation__join-mail">
                 <span>Введите email</span>
                 <input type="email" placeholder="Электронная почта">
@@ -184,7 +184,9 @@
       <div class="add-banners__container">
         <section class="news">
           <div class="news__container">
-            <h2 class="news__title">10 способов сервировки фруктовых щербетов к столу</h2>
+            <h2 class="news__title">
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </h2>
             <p class="news__text">Новое в нашем блоге</p>
           </div>
         </section>
@@ -193,55 +195,61 @@
             <p class="subscription__text">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form action="https://htmlacademy.ru" method="get" name="subscr" class="subscription__form">
+            <form action="https://echo.htmlacademy.ru/" method="get" name="subscr" class="subscription__form">
               <label class="subscription__form-label">
                 <input type="email" placeholder="Электронная почта">
-                <button type="submit" class="button">Отправить</button>
               </label>
+              <button type="submit" class="button button--subscription">Отправить</button>
             </form>
           </div>
         </section>
       </div>
     </div>
     <section class="map">
-      <address class="map__contacts">
-        <p class="map__address">
-          Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-        </p>
-        <p class="map__phone">
-          Для заказов по телефону: <a href="tel:88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)
-        </p>
-        <a href="#" class="button">Форма обратной связи</a>
-      </address>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124161!2d30.32089461631193!3d59.93879686904762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1521828972540" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map__container">
+        <address class="map__contacts">
+          <p class="map__address">
+            Адрес главного офиса
+            <br>и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
+          <p class="map__phone">
+            Для заказов по телефону: <a href="tel:88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)
+          </p>
+          <a href="#" class="button button--map">Форма обратной связи</a>
+        </address>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <ul class="social">
-      <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
-      <li class="social__item social__item--inst"><a href="#">Instagram</a></li>
-      <li class="social__item social__item--fc"><a href="#">Facebook</a></li>
-      <li class="social__item social__item--vk"><a href="#">VK</a></li>
-    </ul>
-    <div class="footer__about">
-      <ul class="footer__about-list">
-        <li class="footer__about-item"><a href="#">Для поставщиков</a></li>
-        <li class="footer__about-item"><a href="#">Наши документы</a></li>
-        <li class="footer__about-item"><a href="#">О производстве</a></li>
-        <li class="footer__about-item"><a href="#">Экологические стандарты</a></li>
+    <div class="footer__container">
+      <ul class="social">
+        <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+        <li class="social__item social__item--inst"><a href="#">Instagram</a></li>
+        <li class="social__item social__item--fc"><a href="#">Facebook</a></li>
+        <li class="social__item social__item--vk"><a href="#">VK</a></li>
       </ul>
-    </div>
-    <div class="footer__dev">
-      <a href="#" class="footer__dev-logo">
-        <picture>
-          <img src="img/svg/htmlacademy.svg" width="108" height="39" alt="HTML Academy интерактивные курсы" title="HTML Academy">
-        </picture>
-      </a>
-      <span class="footer__made-in">Сделано в <a href="htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
+      <div class="footer__about">
+        <ul class="footer__about-list">
+          <li class="footer__about-item"><a href="#">Для поставщиков</a></li>
+          <li class="footer__about-item"><a href="#">Наши документы</a></li>
+          <li class="footer__about-item"><a href="#">О производстве</a></li>
+          <li class="footer__about-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer__dev">
+        <a href="#" class="footer__dev-logo">
+          <picture>
+            <img src="img/svg/htmlacademy.svg" width="108" height="39" alt="HTML Academy интерактивные курсы" title="HTML Academy">
+          </picture>
+        </a>
+        <span class="footer__made-in">Сделано в <a href="htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
+      </div>
     </div>
   </footer>
   <div class="modal">
     <h2 class="modal__title">Мы обязательно вам ответим!</h2>
-    <form action="https://htmlacademy.ru" method="get" name="feedb" class="modal__form">
+    <form action="https://echo.htmlacademy.ru/" method="get" name="feedb" class="modal__form">
       <label class="modal__form-name">
         <span>Введите свое имя</span>
         <input type="text" placeholder="Как вас зовут?">
