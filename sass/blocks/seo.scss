@@ -1,0 +1,47 @@
+.seo {
+padding-bottom: 40px;
+}
+
+.seo__container {
+  @include container();
+  padding-bottom: 15px;
+}
+
+.seo__title {
+  @include field-reset();
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgba(50, 50, 50, 1);
+}
+
+.seo__list {
+  @include order-reset();
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.seo__item {
+  width: 50%;
+  padding-top: 16px;
+  padding-left: 76px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgba(50, 50, 50, 1);
+}
+
+.seo__item:nth-child(2n) {
+padding-left: 70px;
+padding-right: 25px;
+}

@@ -1,7 +1,10 @@
 .button {
   display: inline-flex;
   justify-content: center;
-  padding: 10px 40px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  padding-right: 40px;
+  padding-left: 40px;
   border: none;
 
   font-family: Roboto;
@@ -19,7 +22,10 @@
 
 .button--banners {
   align-self: flex-end;
-  padding: 11px 23px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;

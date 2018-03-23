@@ -1,9 +1,10 @@
-.hits {
-  padding-bottom: 37px;
+.add-banners {
+
 }
 
-.hits__container {
+.add-banners__container {
   @include container();
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }

@@ -41,7 +41,7 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 0em;
   margin: 0.67em 0; }
 
 /* Grouping content
@@ -430,17 +430,17 @@ html {
           box-sizing: inherit; }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500; }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
   font-weight: 700; }
 
@@ -677,7 +677,7 @@ html {
   font-size: 0; }
 
 .index-head {
-  padding-top: 315px;
+  padding-top: 312px;
   padding-bottom: 40px; }
 
 .index-head__container {
@@ -715,10 +715,9 @@ html {
 .index-head__item h2 {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   width: 750px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   font-family: Roboto;
   font-size: 60px;
   font-weight: 700;
@@ -764,7 +763,10 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 40px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  padding-right: 40px;
+  padding-left: 40px;
   border: none;
   font-family: Roboto;
   font-size: 32px;
@@ -782,7 +784,10 @@ html {
 .button--banners {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 11px 23px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
@@ -825,7 +830,6 @@ html {
 .banners__item h2 {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-top: 17px;
   padding-bottom: 17px;
   font-family: Roboto;
@@ -838,7 +842,6 @@ html {
 .banners__item p {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-bottom: 45px;
   font-family: Roboto;
   font-size: 18px;
@@ -846,6 +849,9 @@ html {
   line-height: 1.22;
   text-align: left;
   color: white; }
+
+.hits {
+  padding-bottom: 37px; }
 
 .hits__container {
   width: 1200px;
@@ -875,7 +881,8 @@ html {
 .product h1 {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  padding-top: 12px;
+  text-align: center;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
@@ -885,7 +892,6 @@ html {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.38;
-  text-align: center;
   color: white; }
 
 .product__view-block {
@@ -899,14 +905,90 @@ html {
 
 .product__view-block span {
   left: 0px;
-  bottom: 0px;
-  position: absolute; }
+  bottom: 16px;
+  position: absolute;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5); }
 
 .product__hidden-block {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
   display: none; }
+
+.seo {
+  padding-bottom: 40px; }
+
+.seo__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  padding-bottom: 15px; }
+
+.seo__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #323232; }
+
+.seo__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.seo__item {
+  width: 50%;
+  padding-top: 16px;
+  padding-left: 76px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: #323232; }
+
+.seo__item:nth-child(2n) {
+  padding-left: 70px;
+  padding-right: 25px; }
+
+.add-banners__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.news {
+  -ms-flex-preferred-size: 48.866%;
+      flex-basis: 48.866%; }
+
+.subscription {
+  -ms-flex-preferred-size: 48.866%;
+      flex-basis: 48.866%; }
 
 * {
   outline: 1px dashed lightgray; }
