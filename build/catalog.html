@@ -357,50 +357,74 @@
         <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </section>
-    <ul class="crumbs">
-      <li class="crumbs__item"><a href="index.html">Главная</a></li>
-      <li class="crumbs__item"><a href="#">Каталог</a></li>
-      <li class="crumbs__item"><a>Сливочное</a></li>
-    </ul>
+    <div class="crumbs">
+      <ul class="crumbs__container">
+        <li class="crumbs__item"><a href="index.html">Главная</a></li>
+        <li class="crumbs__item"><a href="#">Каталог</a></li>
+        <li class="crumbs__item"><a>Сливочное</a></li>
+      </ul>
+    </div>
     <section class="form-wrap">
       <h1 class="form-wrap__title">Сливочное мороженое</h1>
       <form action="https://echo.htmlacademy.ru/" method="get" name="filter" class="form">
-        <fieldset class="form__sort">
-          <legend class="form__title">Сортировка:</legend>
-          <select name="sort-select" id="select" class="form__sort-select">
-            <option value="popular">по популярности</option>
-            <option value="nasty">по отвратности</option>
-            <option value="color">по цвету</option>
-          </select>
-        </fieldset>
-        <fieldset class="form__range-control">
-          <legend class="form__title">Цена: 100 руб. – 500 руб.</legend>
-          <input type="range">
-        </fieldset>
-        <fieldset class="form__fat">
-          <legend class="form__title">Жирность:</legend>
-          <label class="form__fat-item">
-            <input name="fat" type="radio">0%</label>
-          <label class="form__fat-item">
-            <input name="fat" type="radio">до 10%</label>
-          <label class="form__fat-item">
-            <input name="fat" type="radio">до 30%</label>
-          <label class="form__fat-item">
-            <input name="fat" type="radio">выше 30%</label>
-        </fieldset>
-        <fieldset class="form__filler">
-          <legend class="form__title">Наполнители:</legend>
-          <label class="form__filler-item">
-            <input type="checkbox">шоколадные</label>
-          <label class="form__filler-item">
-            <input type="checkbox">сахарные присыпки</label>
-          <label class="form__filler-item">
-            <input type="checkbox">фрукты</label>
-          <label class="form__filler-item">
-            <input type="checkbox">сиропы</label>
-          <label class="form__filler-item">
-            <input type="checkbox">джемы</label>
-        </fieldset>
+        <div class="form__container">
+          <fieldset class="form__sort">
+            <legend class="form__title">Сортировка:</legend>
+            <select name="sort-select" id="select" class="form__sort-select">
+              <option value="popular">по популярности</option>
+              <option value="nasty">по отвратности</option>
+              <option value="color">по цвету</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="form__container">
+
+          <div class="form__range">
+            <div class="form__title form__title--range">
+              <span>Цена:</span>
+              <input type="text" name="min-price" value="100" id="min-value" class="form__min">
+              <label for="min-value" class="form__min-price">руб. –</label>
+              <input type="text" name="max-price" value="500" id="max-value" class="form__max">
+              <label for="max-value" class="form__max-price">руб.</label>
+            </div>
+            <div class="form__controls">
+              <div class="form__scale">
+                <div class="form__bar"></div>
+              </div>
+              <span class="form__tog form__tog-min"></span>
+              <span class="form__tog form__tog-max"></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="form__container">
+          <fieldset class="form__fat">
+            <legend class="form__title">Жирность:</legend>
+            <label class="form__fat-item">
+              <input name="fat" type="radio">0%</label>
+            <label class="form__fat-item">
+              <input name="fat" type="radio">до 10%</label>
+            <label class="form__fat-item">
+              <input name="fat" type="radio">до 30%</label>
+            <label class="form__fat-item">
+              <input name="fat" type="radio">выше 30%</label>
+          </fieldset>
+        </div>
+        <div class="form__container">
+          <fieldset class="form__filler">
+            <legend class="form__title">Наполнители:</legend>
+            <label class="form__filler-item">
+              <input type="checkbox">шоколадные</label>
+            <label class="form__filler-item">
+              <input type="checkbox">сахарные присыпки</label>
+            <label class="form__filler-item">
+              <input type="checkbox">фрукты</label>
+            <label class="form__filler-item">
+              <input type="checkbox">сиропы</label>
+            <label class="form__filler-item">
+              <input type="checkbox">джемы</label>
+          </fieldset>
+        </div>
         <button type="submit" class="form__button">Применить</button>
       </form>
     </section>

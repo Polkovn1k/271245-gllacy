@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -553,8 +554,8 @@ html {
 
 .navigation__add-item--cart a {
   display: block;
-  padding-left: 45px;
-  padding-right: 34px; }
+  width: 117.72px;
+  padding-left: 45px; }
 
 .navigation__search {
   display: none; }
@@ -570,6 +571,9 @@ html {
 
 .navigation__join-pass span {
   font-size: 0; }
+
+.navigation__cart-prev {
+  display: none; }
 
 .navigation {
   display: -webkit-box;
@@ -658,8 +662,8 @@ html {
 
 .navigation__add-item--cart a {
   display: block;
-  padding-left: 45px;
-  padding-right: 34px; }
+  width: 117.72px;
+  padding-left: 45px; }
 
 .navigation__search {
   display: none; }
@@ -675,6 +679,9 @@ html {
 
 .navigation__join-pass span {
   font-size: 0; }
+
+.navigation__cart-prev {
+  display: none; }
 
 .index-head {
   padding-top: 312px;
@@ -760,6 +767,7 @@ html {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  vertical-align: top;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1282,6 +1290,195 @@ html {
 
 .modal {
   display: none; }
+
+.crumbs {
+  padding-top: 22px;
+  padding-bottom: 2px; }
+
+.crumbs__container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.crumbs__item {
+  position: relative;
+  padding-right: 21px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: white; }
+
+.crumbs__item::after {
+  position: absolute;
+  content: "»";
+  display: block;
+  top: 0;
+  right: 6px;
+  font-size: 12px; }
+
+.crumbs__item:last-child::after {
+  display: none; }
+
+.crumbs__item a {
+  color: white; }
+
+.form-wrap {
+  padding-bottom: 10px; }
+
+.form-wrap__title {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: white; }
+
+.form {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  padding-top: 30px;
+  padding-right: 313px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.form__sort {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.form__title {
+  padding-left: 16px;
+  padding-bottom: 6px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: white; }
+
+.form__sort-select {
+  min-width: 194px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 15px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: white;
+  background: rgba(248, 247, 244, 0.2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none; }
+
+.form__title--range {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  vertical-align: top; }
+
+.form__min-price {
+  margin-right: 6px; }
+
+.form__min[type="text"] {
+  width: 29px;
+  max-height: 15px;
+  padding-left: 2px;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: white;
+  border: none; }
+
+.form__max[type="text"] {
+  width: 29px;
+  max-height: 15px;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: white;
+  border: none; }
+
+.form__controls {
+  position: relative;
+  min-width: 220px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border-radius: 15px;
+  background: rgba(248, 247, 244, 0.2); }
+
+.form__scale {
+  width: 100%;
+  min-height: 4px;
+  background: rgba(248, 247, 244, 0.5); }
+
+.form__bar {
+  min-height: 4px;
+  margin-left: 16px;
+  margin-right: 52px;
+  background: #f8f7f4; }
+
+.form__tog {
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset 0 0 0 8px white;
+          box-shadow: inset 0 0 0 8px white; }
+
+.form__tog-max {
+  left: 133px; }
+
+.form__fat {
+  width: 417px;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.form__filler {
+  margin: 0;
+  padding: 0;
+  border: none; }
 
 * {
   outline: 1px dashed lightgray; }

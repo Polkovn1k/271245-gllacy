@@ -1,0 +1,158 @@
+.form {
+  @include container();
+  padding-top: 30px;
+  padding-right: 313px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form__container {
+
+}
+
+.form__sort {
+  @include field-reset();
+  border: none;
+}
+
+.form__title {
+  padding-left: 16px;
+  padding-bottom: 6px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: rgba(255, 255, 255, 1);
+}
+
+.form__sort-select {
+  min-width: 194px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 15px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(248, 247, 244, 0.2);
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.form__range {
+
+}
+
+.form__title--range {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  vertical-align: top;
+}
+
+.form__min-price {
+  margin-right: 6px;
+}
+
+.form__max-price {
+
+}
+
+.form__min[type="text"] {
+  width: 29px;
+  max-height: 15px;
+  padding-left: 2px;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.form__max[type="text"] {
+  width: 29px;
+  max-height: 15px;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.form__controls {
+  position: relative;
+  min-width: 220px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  border-radius: 15px;
+  background: rgba(248, 247, 244, 0.2);
+}
+
+.form__scale {
+  width: 100%;
+  min-height: 4px;
+  background: rgba(248, 247, 244, 0.5);
+}
+
+.form__bar {
+  min-height: 4px;
+  margin-left: 16px;
+  margin-right: 52px;
+  background: rgba(248, 247, 244, 1);
+}
+
+.form__tog {
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(180, 180, 180, 1);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 1);
+}
+
+.form__tog-max {
+  left: 133px;
+}
+
+.form__fat {
+  width: 417px;
+  @include field-reset();
+  border: none;
+}
+
+.form__fat-item {
+
+}
+
+.form__fat-item input {
+
+}
+
+.form__filler {
+  @include field-reset();
+  border: none;
+}
+
+.form__filler-item {
+
+}
+
+.form__filler-item input {
+
+}

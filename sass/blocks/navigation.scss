@@ -97,8 +97,8 @@
 
 .navigation__add-item--cart a {
   display: block;
+  width: 117.72px;
   padding-left: 45px;
-  padding-right: 34px;
 }
 
 .navigation__search {
@@ -146,5 +146,13 @@
 }
 
 .navigation__cart-link {
+
+}
+
+.navigation__cart-prev {
+  display: none;
+}
+
+.navigation__cart-table {
 
 }
