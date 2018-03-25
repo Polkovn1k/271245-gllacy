@@ -378,7 +378,6 @@
           </fieldset>
         </div>
         <div class="form__container">
-
           <div class="form__range">
             <div class="form__title form__title--range">
               <span>Цена:</span>
@@ -395,34 +394,37 @@
               <span class="form__tog form__tog-max"></span>
             </div>
           </div>
-
         </div>
         <div class="form__container">
           <fieldset class="form__fat">
             <legend class="form__title">Жирность:</legend>
-            <label class="form__fat-item">
-              <input name="fat" type="radio">0%</label>
-            <label class="form__fat-item">
-              <input name="fat" type="radio">до 10%</label>
-            <label class="form__fat-item">
-              <input name="fat" type="radio">до 30%</label>
-            <label class="form__fat-item">
-              <input name="fat" type="radio">выше 30%</label>
+            <div class="form__fat-field">
+              <input name="fat" type="radio" id="form__fat-1" class="form__fat-input visually-hidden">
+              <input name="fat" type="radio" id="form__fat-2" class="form__fat-input visually-hidden" checked="">
+              <input name="fat" type="radio" id="form__fat-3" class="form__fat-input visually-hidden">
+              <input name="fat" type="radio" id="form__fat-4" class="form__fat-input visually-hidden">
+              <label for="form__fat-1" class="form__fat-item form__fat-item--1">0%</label>
+              <label for="form__fat-2" class="form__fat-item form__fat-item--2">до 10%</label>
+              <label for="form__fat-3" class="form__fat-item form__fat-item--3">до 30%</label>
+              <label for="form__fat-4" class="form__fat-item form__fat-item--4">выше 30%</label>
+            </div>
           </fieldset>
         </div>
         <div class="form__container">
           <fieldset class="form__filler">
             <legend class="form__title">Наполнители:</legend>
-            <label class="form__filler-item">
-              <input type="checkbox">шоколадные</label>
-            <label class="form__filler-item">
-              <input type="checkbox">сахарные присыпки</label>
-            <label class="form__filler-item">
-              <input type="checkbox">фрукты</label>
-            <label class="form__filler-item">
-              <input type="checkbox">сиропы</label>
-            <label class="form__filler-item">
-              <input type="checkbox">джемы</label>
+            <div class="form__filler-field">
+              <input name="chocko" type="checkbox" id="form__filler-1" class="form__filler-input visually-hidden" checked="">
+              <input name="sugar" type="checkbox" id="form__filler-2" class="form__filler-input visually-hidden" checked="">
+              <input name="fruit" type="checkbox" id="form__filler-3" class="form__filler-input visually-hidden">
+              <input name="taste" type="checkbox" id="form__filler-4" class="form__filler-input visually-hidden">
+              <input name="jam" type="checkbox" id="form__filler-5" class="form__filler-input visually-hidden">
+              <label for="form__filler-1" class="form__filler-item form__filler-item--1">шоколадные</label>
+              <label for="form__filler-2" class="form__filler-item form__filler-item--2">сахарные присыпки</label>
+              <label for="form__filler-3" class="form__filler-item form__filler-item--3">фрукты</label>
+              <label for="form__filler-4" class="form__filler-item form__filler-item--4">сиропы</label>
+              <label for="form__filler-5" class="form__filler-item form__filler-item--5">джемы</label>
+            </div>
           </fieldset>
         </div>
         <button type="submit" class="form__button">Применить</button>

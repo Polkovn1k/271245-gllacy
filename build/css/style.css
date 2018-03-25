@@ -1361,9 +1361,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .form__sort {
   margin: 0;
@@ -1384,7 +1384,7 @@ html {
   padding-left: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-radius: 15px;
+  border-radius: 18px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -1441,7 +1441,7 @@ html {
   padding-bottom: 16px;
   padding-right: 22px;
   padding-left: 22px;
-  border-radius: 15px;
+  border-radius: 18px;
   background: rgba(248, 247, 244, 0.2); }
 
 .form__scale {
@@ -1470,15 +1470,106 @@ html {
   left: 133px; }
 
 .form__fat {
-  width: 417px;
   margin: 0;
   padding: 0;
   border: none; }
 
+.form__fat-field {
+  width: 417px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 18px;
+  background: rgba(248, 247, 244, 0.2); }
+
+.form__fat-item {
+  position: relative;
+  padding-left: 45px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: white; }
+
+.form__fat-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: -2px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.8); }
+
+#form__fat-1:checked ~ .form__fat-item--1::before,
+#form__fat-2:checked ~ .form__fat-item--2::before,
+#form__fat-3:checked ~ .form__fat-item--3::before,
+#form__fat-4:checked ~ .form__fat-item--4::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 40%); }
+
 .form__filler {
   margin: 0;
   padding: 0;
-  border: none; }
+  border: none;
+  margin-top: 17px; }
+
+.form__filler-field {
+  width: 703px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 18px;
+  background: rgba(248, 247, 244, 0.2); }
+
+.form__filler-item {
+  position: relative;
+  padding-left: 49px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: white; }
+
+.form__filler-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 15px;
+  height: 20px;
+  width: 24px;
+  background: #000; }
+
+#form__filler-1:checked ~ .form__filler-item--1::before,
+#form__filler-2:checked ~ .form__filler-item--2::before,
+#form__filler-3:checked ~ .form__filler-item--3::before,
+#form__filler-4:checked ~ .form__filler-item--4::before,
+#form__filler-5:checked ~ .form__filler-item--5::before {
+  background: red; }
+
+.form__button {
+  padding: 7px 26px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  text-align: center;
+  color: white;
+  background: rgba(248, 247, 244, 0.2);
+  border: solid 2px white;
+  border-radius: 18px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 * {
   outline: 1px dashed lightgray; }
