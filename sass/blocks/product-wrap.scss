@@ -1,8 +1,8 @@
-.hits {
-
+.product-wrap {
+  padding-bottom: 43px;
 }
 
-.hits__container {
+.product-wrap__container {
   @include container();
   display: flex;
   justify-content: space-between;

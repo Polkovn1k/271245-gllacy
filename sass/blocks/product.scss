@@ -1,18 +1,28 @@
 .product {
+  position: relative;
   flex-basis: 267px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 38px;
 }
 
-.product h1 {
+.product--index {
+  margin-bottom: 36px;
+}
+
+.product__title {
+  position: relative;
+  z-index: 10;
   @include field-reset();
-  padding-top: 12px;
+  padding-top: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
   order: 2;
 }
 
-.product a {
+.product__title a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -48,6 +58,32 @@
 .product__hidden-block {
   order: 3;
   display: none;
+  width: 100%;
+  min-height: $hidden-block-height;
+  position: absolute;
+  z-index: 15;
+  bottom: -$hidden-block-height;
+  padding-top: 9px;
+  padding-bottom: 21px;
+  text-align: center;
 }
 
+.product:hover .product__hidden-block {
+  display: block;
+}
+
+.product:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: -6px;
+  bottom: 0px;
+  left: -13px;
+  right: -13px;
+  height: calc(100% + #{$hidden-block-height});
+  background: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
 
