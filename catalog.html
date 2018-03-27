@@ -16,7 +16,7 @@
   <header class="header">
     <div class="container">
       <nav class="navigation">
-        <a href="index.html" class="navigation__logo">
+        <a href="/" class="navigation__logo">
           <picture>
             <img src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Logo" title="Gllacy Logo">
           </picture>
@@ -40,7 +40,7 @@
             <a href="#">Поиск по сайту</a>
             <form action="https://echo.htmlacademy.ru/" method="get" name="search" class="navigation__search">
               <label class="navigation__search-item">
-                <span>Поиск по сайту</span>
+                <span class="visually-hidden">Поиск по сайту</span>
                 <input type="search" placeholder="Что ищем?">
               </label>
             </form>
@@ -49,17 +49,19 @@
             <a href="#">Вход</a>
             <form action="https://echo.htmlacademy.ru/" method="get" name="join" class="navigation__join">
               <label class="navigation__join-mail">
-                <span>Введите email</span>
+                <span class="visually-hidden">Введите email</span>
                 <input type="email" placeholder="Электронная почта">
               </label>
               <label class="navigation__join-pass">
-                <span>Введите пароль</span>
+                <span class="visually-hidden">Введите пароль</span>
                 <input type="password" placeholder="Пароль">
               </label>
               <div class="navigation__join-links">
-                <button type="submit" class="button">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+                <button type="submit" class="button button--join-links">Войти</button>
+                <div class="navigation__join-links-container">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
               </div>
             </form>
           </li>
@@ -95,7 +97,7 @@
     </section>
     <div class="crumbs">
       <ul class="crumbs__container">
-        <li class="crumbs__item"><a href="index.html">Главная</a></li>
+        <li class="crumbs__item"><a href="/">Главная</a></li>
         <li class="crumbs__item"><a href="#">Каталог</a></li>
         <li class="crumbs__item"><a>Сливочное</a></li>
       </ul>
