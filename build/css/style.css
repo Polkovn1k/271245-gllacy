@@ -935,8 +935,9 @@ html {
   width: 80px; }
 
 .index-head__slider-label label {
-  -ms-flex-preferred-size: 20px;
-      flex-basis: 20px;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: 20px;
   height: 20px;
   border: 2px solid white;
   border-radius: 50%;
