@@ -4,10 +4,36 @@
 }
 
 .index-head__container {
-  display: flex;
+  @include field-reset();
   @include container();
+  display: flex;
+  position: relative;
   justify-content: center;
   align-items: flex-start;
+}
+
+.index-head__slider-label {
+  position: absolute;
+  bottom: 23px;
+  left: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80px;
+}
+
+.index-head__slider-label label {
+  flex-basis: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slider-1:checked ~ .wrapper label[for="slider-1"],
+#slider-2:checked ~ .wrapper label[for="slider-2"],
+#slider-3:checked ~ .wrapper label[for="slider-3"] {
+  background: rgba(255, 255, 255, 1);
 }
 
 .index-head__item {

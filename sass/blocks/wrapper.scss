@@ -1,0 +1,15 @@
+.wrapper {
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+#slider-1:checked ~ .wrapper {
+  background: rgba(132, 157, 143, 1) url("../img/bg/main__ice-bg-1.png") no-repeat 50% top;
+}
+
+#slider-2:checked ~ .wrapper {
+  background: rgba(137, 150, 166, 1) url("../img/bg/main__ice-bg-2.png") no-repeat 50% top;
+}
+
+#slider-3:checked ~ .wrapper {
+  background: rgba(157, 139, 132, 1) url("../img/bg/main__ice-bg-3.png") no-repeat 50% top;
+}
