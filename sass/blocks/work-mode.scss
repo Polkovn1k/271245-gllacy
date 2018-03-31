@@ -1,13 +1,12 @@
 .work-mode {
-  position: relative;
   @include container();
+  position: relative;
 }
 
 .work-mode__container {
   position: absolute;
   top: -5px;
   right: 27px;
-
   text-align: right;
 }
 
@@ -18,7 +17,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 }
 
 .work-mode__container a {
@@ -26,5 +25,5 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 1.09;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 }

@@ -20,9 +20,9 @@
   content: "";
   display: block;
   position: absolute;
+  right: 27px;
   bottom: -31px;
   left: 27px;
-  right: 27px;
   height: 1px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -35,18 +35,32 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
-  background: rgba(255, 255, 255, 1);
+  background: $main-text-color;
   border-radius: 50%;
   text-align: center;
+  color: $grey-text-color;
 }
 
 .paginator__item a[href] {
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
   background: transparent;
 }
 
+.paginator__item a[href]:hover {
+  color: $main-text-color;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.paginator__item a[href]:active {
+  color: $grey-text-color;
+  background: $main-text-color;
+}
+
 .paginator__item--prev a,
-.paginator__item--prev a[href] {
+.paginator__item--prev a[href],
+.paginator__item--prev a:hover,
+.paginator__item--prev a[href]:hover {
+  position: relative;
   width: 15px;
   margin-right: 10px;
   margin-left: 0px;
@@ -55,9 +69,53 @@
 }
 
 .paginator__item--next a,
-.paginator__item--next a[href] {
+.paginator__item--next a[href],
+.paginator__item--next a:hover,
+.paginator__item--next a[href]:hover {
+  position: relative;
   width: 15px;
   margin-left: 10px;
   font-size: 0;
   background: transparent;
+}
+
+.paginator__item--prev a::before,
+.paginator__item--next a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  height: 2px;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(-45deg);
+}
+
+.paginator__item--prev a::after,
+.paginator__item--next a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  height: 2px;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+}
+
+.paginator__item--next a::before {
+  transform: rotate(45deg);
+}
+
+.paginator__item--next a::after {
+  transform: rotate(-45deg);
+}
+
+.paginator__item--prev a[href]::before,
+.paginator__item--next a[href]::before,
+.paginator__item--prev a[href]::after,
+.paginator__item--next a[href]::after {
+  background: $main-text-color;
 }

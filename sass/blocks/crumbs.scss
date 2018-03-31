@@ -13,12 +13,11 @@
 .crumbs__item {
   position: relative;
   padding-right: 21px;
-
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 }
 
 .crumbs__item::after {
@@ -35,5 +34,19 @@
 }
 
 .crumbs__item a {
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
+  text-decoration: underline;
+}
+
+.crumbs__item:last-child a {
+  text-decoration: none;
+}
+
+.crumbs__item a:hover,
+.crumbs__item a:active {
+  color: $link-text-hover;
+}
+
+.crumbs__item:last-child a:hover {
+  color: $main-text-color;
 }

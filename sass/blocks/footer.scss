@@ -9,7 +9,8 @@
 }
 
 .footer__about {
-  flex-basis: 33.333%;
+  flex-basis: auto;
+  width: 33.333%;
   flex-grow: 1;
   padding-top: 15px;
 }
@@ -29,7 +30,8 @@
 }
 
 .footer__about-item:nth-child(2n) {
-  flex-basis: 47.7%;
+  flex-basis: auto;
+  width: 47.7%;
   flex-grow: 1;
   padding-left: 0px;
 }
@@ -39,7 +41,16 @@
  font-size: 13px;
  font-weight: 400;
  line-height: 1.38;
- color: rgba(255, 255, 255, 1);
+ color: $main-text-color;
+}
+
+.footer__about-item a:hover,
+.footer__about-item a:active {
+  color: $link-text-hover;
+}
+
+.footer__about-item:first-child {
+  background: transparent url("../img/svg-bg/heart.svg") no-repeat 18px 2px;
 }
 
 .footer__about-item:first-child a {
@@ -47,7 +58,8 @@
 }
 
 .footer__dev {
-  flex-basis: 33.333%;
+  flex-basis: auto;
+  width: 33.333%;
   flex-grow: 1;
   text-align: right;
 }
@@ -57,8 +69,16 @@
   padding-right: 80px;
 }
 
-.footer__dev-logo img {
+.footer__dev-icon {
+  fill: $main-text-color;
+}
 
+.footer__dev-icon:hover {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.footer__dev-icon:active {
+  fill: $main-text-color;
 }
 
 .footer__made-in {
@@ -66,10 +86,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(254, 254, 254, 1);
+  color: $main-text-color;
 }
 
 .footer__made-in a {
   text-decoration: underline;
-  color: rgba(254, 254, 254, 1);
+  color: $main-text-color;
+}
+
+.footer__made-in a:hover,
+.footer__made-in a:active {
+  color: $link-text-hover;
 }

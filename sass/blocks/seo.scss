@@ -1,47 +1,58 @@
 .seo {
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .seo__container {
   @include container-margin();
   padding-bottom: 15px;
+  border-radius: 15px;
+  background: rgba(239, 228, 207, 1) url("../img/bg/seo__bg.jpg") repeat;
 }
 
 .seo__title {
   @include field-reset();
-  padding-top: 25px;
-  padding-left: 20px;
+  padding-top: 24px;
   padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 5px;
-
   font-family: Roboto;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.25;
-  color: rgba(50, 50, 50, 1);
+  color: $grey-text-color;
 }
 
 .seo__list {
   @include order-reset();
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .seo__item {
+  position: relative;
   width: 50%;
   padding-top: 16px;
-  padding-left: 76px;
-  padding-bottom: 8px;
   padding-right: 15px;
+  padding-bottom: 8px;
+  padding-left: 76px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.38;
-  color: rgba(50, 50, 50, 1);
+  color: $grey-text-color;
 }
 
 .seo__item:nth-child(2n) {
-padding-left: 70px;
-padding-right: 25px;
+  padding-right: 25px;
+  padding-left: 70px;
+}
+
+.navigation__item-icon {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+}
+
+.seo__item:nth-child(2n) .navigation__item-icon {
+  left: 12px;
 }

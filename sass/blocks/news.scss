@@ -1,15 +1,17 @@
 .news {
-  flex-basis: 48.866%;
+  flex-basis: auto;
+  width: 48.866%;
 }
 
 .news__container {
-display: flex;
-flex-direction: column-reverse;
-flex-wrap: wrap;
-padding-top: 23px;
-padding-left: 19px;
-padding-right: 19px;
-padding-bottom: 81px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  padding-top: 23px;
+  padding-bottom: 81px;
+  padding-left: 19px;
+  border-radius: 15px;
+  background: $main-text-color url("../img/bg/news-bg.jpg");
 }
 
 .news__title {
@@ -22,17 +24,21 @@ padding-bottom: 81px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
-  color: rgba(50, 50, 50, 1);
+  color: $grey-text-color;
   text-decoration: underline;
+}
+
+.news__title a:hover,
+.news__title a:active {
+  color: $link-text-hover;
 }
 
 .news__text {
   @include field-reset();
   padding-bottom: 4px;
-
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.38;
-  color: rgba(50, 50, 50, 1);
+  color: $grey-text-color;
 }

@@ -9,10 +9,6 @@
   align-items: flex-end;
 }
 
-.form__container {
-
-}
-
 .form__sort {
   @include field-reset();
   border: none;
@@ -25,7 +21,26 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
+}
+
+.form__sort-triangle {
+  position: relative;
+}
+
+.form__sort-triangle::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  border: 5px solid transparent;
+  border-top: 10px solid $main-text-color;
+  cursor: pointer;
+}
+
+.form__sort-triangle:hover::before, {
+  border-top: 10px solid $grey-text-color;
+  pointer-events: none;
 }
 
 .form__sort-select {
@@ -39,13 +54,16 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
   background: rgba(248, 247, 244, 0.2);
-
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
+}
+
+.form__sort-select:hover {
+  color: $grey-text-color;
 }
 
 .form__sort-select::-ms-expand {
@@ -53,18 +71,14 @@
 }
 
 .form__sort-select option {
-  background: rgba(255, 255, 255, 1);
-  color: rgba(50, 50, 50, 1);
+  background: $main-text-color;
+  color: $grey-text-color;
   font-size: 14px;
   line-height: 1.142;
 }
 
 option[selected] {
-  background: #000;
-}
-
-.form__range {
-
+  background: $add-text-color;
 }
 
 .form__title--range {
@@ -78,10 +92,6 @@ option[selected] {
   margin-right: 6px;
 }
 
-.form__max-price {
-
-}
-
 .form__min[type="text"] {
   width: 29px;
   max-height: 15px;
@@ -91,7 +101,7 @@ option[selected] {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
   border: none;
 }
 
@@ -103,7 +113,7 @@ option[selected] {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
   border: none;
 }
 
@@ -114,7 +124,6 @@ option[selected] {
   padding-bottom: 16px;
   padding-right: 22px;
   padding-left: 22px;
-
   border-radius: 18px;
   background: rgba(248, 247, 244, 0.2);
 }
@@ -140,7 +149,12 @@ option[selected] {
   height: 20px;
   border-radius: 50%;
   background: rgba(180, 180, 180, 1);
-  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 0 8px $main-text-color;
+  cursor: pointer;
+}
+
+.form__tog:hover {
+  box-shadow: inset 0 0 0 8px $main-text-color, 0 0 0 1px $main-text-color;
 }
 
 .form__tog-max {
@@ -167,7 +181,7 @@ option[selected] {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 }
 
 .form__fat-item::before {
@@ -179,14 +193,30 @@ option[selected] {
   height: 22px;
   width: 22px;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.8);
+  border: 3px solid $main-text-color;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form__fat-item:hover::before {
+  opacity: 1;
 }
 
 #form__fat-1:checked ~ .form__fat-item--1::before,
 #form__fat-2:checked ~ .form__fat-item--2::before,
 #form__fat-3:checked ~ .form__fat-item--3::before,
 #form__fat-4:checked ~ .form__fat-item--4::before {
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 40%);
+  background: radial-gradient(circle, $main-text-color 40%, transparent 40%);
+  opacity: 0.8;
+  cursor: default;
+}
+
+#form__fat-1:disabled ~ .form__fat-item--1::before,
+#form__fat-2:disabled ~ .form__fat-item--2::before,
+#form__fat-3:disabled ~ .form__fat-item--3::before,
+#form__fat-4:disabled ~ .form__fat-item--4::before {
+  cursor: default;
+  opacity: 0.4;
 }
 
 .form__filler {
@@ -210,7 +240,7 @@ option[selected] {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
-  color: rgba(255, 255, 255, 1);
+  color: $main-text-color;
 }
 
 .form__filler-item::before {
@@ -221,7 +251,14 @@ option[selected] {
   left: 15px;
   height: 20px;
   width: 24px;
-  background: #000;
+  background: transparent url("../img/svg-bg/checkbox-off.svg") no-repeat 0px 0px;
+  background-size: 24px 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form__filler-item:hover::before {
+  opacity: 1;
 }
 
 #form__filler-1:checked ~ .form__filler-item--1::before,
@@ -229,7 +266,18 @@ option[selected] {
 #form__filler-3:checked ~ .form__filler-item--3::before,
 #form__filler-4:checked ~ .form__filler-item--4::before,
 #form__filler-5:checked ~ .form__filler-item--5::before {
-  background: red;
+  background: transparent url("../img/svg-bg/checkbox-on.svg") no-repeat 0px 0px;
+  background-size: 24px 20px;
+  opacity: 0.8;
+}
+
+#form__filler-1:disabled ~ .form__filler-item--1::before,
+#form__filler-2:disabled ~ .form__filler-item--2::before,
+#form__filler-3:disabled ~ .form__filler-item--3::before,
+#form__filler-4:disabled ~ .form__filler-item--4::before,
+#form__filler-5:disabled ~ .form__filler-item--5::before {
+  cursor: default;
+  opacity: 0.4;
 }
 
 .form__button {
@@ -239,9 +287,20 @@ option[selected] {
   font-weight: 500;
   line-height: 1.13;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-
+  color: $main-text-color;
   background: rgba(248, 247, 244, 0.2);
-  border: solid 2px rgba(255, 255, 255, 1);
+  border: solid 2px $main-text-color;
   border-radius: 18px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background: $main-text-color;
+  color: $grey-text-color;
+}
+
+.form__button:active {
+  background-color: rgba(237, 237, 237, 1);
+  box-shadow: inset 0px 2px 1px 0 rgba(105, 105, 105, 1);
+  color: $grey-text-color;
 }

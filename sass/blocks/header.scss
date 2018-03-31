@@ -3,7 +3,7 @@
 }
 
 .header__container {
-  display: flex;
   @include container();
+  display: flex;
   align-items: flex-start;
 }

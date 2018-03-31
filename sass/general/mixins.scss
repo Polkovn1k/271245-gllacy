@@ -9,13 +9,13 @@
   margin: 0 auto;
 }
 
+@mixin field-reset() {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin order-reset() {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-@mixin field-reset() {
-  margin: 0;
-  padding: 0;
 }

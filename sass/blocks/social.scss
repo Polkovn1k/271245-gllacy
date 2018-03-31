@@ -1,9 +1,10 @@
 .social {
+  @include order-reset();
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  @include order-reset();
-  flex-basis: 33.333%;
+  flex-basis: auto;
+  width: 33.333%;
   flex-grow: 1;
   padding-top: 18px;
   padding-left: 2px;
@@ -19,23 +20,40 @@
 
 .social__item a {
   display: block;
-  padding-right: 38px;
-  padding-top: 38px;
+  width: 38px;
+  height: 38px;
   font-size: 0;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
-.social__item--tw a {
-
+.social__item a:hover {
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.social__item--inst a {
-
+.social__item a:active {
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.social__item--fc a {
-
+.social__tw-icon,
+.social__inst-icon,
+.social__fb-icon,
+.social__vk-icon {
+  width: 32px;
+  height: 32px;
+  fill: rgba(255, 255, 255, 0.8);
 }
 
-.social__item--vk a {
+.social__tw-icon:hover,
+.social__inst-icon:hover,
+.social__fb-icon:hover,
+.social__vk-icon:hover {
+  fill: $main-text-color;
+}
 
+.social__tw-icon:active,
+.social__inst-icon:active,
+.social__fb-icon:active,
+.social__vk-icon:active {
+  fill: $main-text-color;
 }

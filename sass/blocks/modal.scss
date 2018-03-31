@@ -35,7 +35,7 @@
   font-family: "Roboto";
   font-size: 24px;
   line-height: 1.167;
-  color: rgba(50, 50, 50, 1);
+  color: $grey-text-color;
 }
 
 .modal__form {
@@ -96,7 +96,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $main-text-color;
   border: solid 1px rgba(178, 178, 178, 0.52);
   border-radius: 5px;
 }
@@ -105,6 +105,7 @@
   display: block;
   margin-bottom: 24px;
   resize: vertical;
+  width: 100%;
   height: 155px;
   max-height: 350px;
   padding-top: 6px;
@@ -115,9 +116,61 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $main-text-color;
   border: solid 1px rgba(178, 178, 178, 0.52);
   border-radius: 5px;
+}
+
+.modal__form input::-webkit-input-placeholder,
+.modal__form textarea::-webkit-input-placeholder {
+  color: $placeholder-color;
+}
+
+.modal__form input::-moz-placeholder,
+.modal__form textarea::-moz-placeholder {
+  color: $placeholder-color;
+}
+
+.modal__form input:-ms-input-placeholder,
+.modal__form textarea:-ms-input-placeholder {
+  color: $placeholder-color;
+}
+
+.modal__form input:-moz-placeholder,
+.modal__form textarea:-moz-placeholder {
+  color: $placeholder-color;
+}
+
+.modal__form input:focus::-webkit-input-placeholder,
+.modal__form textarea:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.modal__form input:focus::-moz-placeholder,
+.modal__form textarea:focus::-moz-placeholder {
+  font-size: 0;
+}
+
+.modal__form input:focus:-ms-input-placeholder,
+.modal__form textarea:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.modal__form input:focus:-moz-placeholder,
+.modal__form textarea:focus:-moz-placeholder {
+  font-size: 0;
+}
+
+.modal__form input:hover,
+.modal__form textarea:hover {
+  border-color: rgba(154, 154, 154, 0.52);
+  box-shadow: 0px 0px 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.modal__form input:focus,
+.modal__form textarea:focus {
+  font-weight: 700;
+  color: $grey-text-color;
 }
 
 @keyframes anim {
